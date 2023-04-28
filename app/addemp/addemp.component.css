@@ -1,0 +1,63 @@
+body{
+    background-image:linear-gradient(rgb(85, 202, 202),rgb(143, 143, 233),rgb(100, 100, 226));
+    height: 710px;
+    padding: 15px;
+    margin: 0;
+}
+input[type="number"], input[type="text"], select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(103, 230, 103);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid blue;
+    background-color: rgb(255, 245, 245);
+}
+
+th {
+    background-color: rgb(103, 230, 103);
+    color: white;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+#f1{
+    border: 2px solid blue;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 2px;
+}
+#f2,#f3{
+    border: 2px solid blue;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: red;
+    margin-left: 2px;
+
+}

@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <h1>Add an Employee</h1>
+        <input type = "number" placeholder="Employee Id" [(ngModel)] = Empid>
+        <input type = "text" placeholder="Employee Name" [(ngModel)] = Empname>
+        <select [(ngModel)] = Empfield>
+            <option value="Data Science">Data Science</option>
+            <option value="Machine Learnind">Machine Learnind</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Internet of Things">Internet of Things</option>
+        </select>
+        <button (click)="add1()">Add</button><br>
+        <h1>Details of Employees</h1>
+        <!-- <div class = "page" *ngFor="let item of A1 ,let i = index"></div> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Employee Field</th>
+                    <th>Points</th>
+                    <th>Edit</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of A1; let i = index">
+            <td>{{ item.Empid }}</td>
+            <td>{{ item.Empname }}</td>
+            <td>{{ item.Empfield }}</td>
+            <td>{{item.score}}</td>
+            <td><button id="f1" (click)="inc(i)">+</button><button id="f2" (click)="dec(i)">-</button></td>
+            <td><button id="f3" (click) = "del(i)">Kick</button></td>
+        </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+

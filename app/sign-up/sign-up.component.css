@@ -1,0 +1,45 @@
+body{
+    background-image:linear-gradient(rgb(85, 202, 202),rgb(143, 143, 233),rgb(100, 100, 226));
+    height: 775px;
+    padding: 0;
+    margin: 0;
+}
+.cont{
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    margin-left: 530px;
+    margin-top: 50px;
+    background-color: white;
+    padding: 50px;
+    padding-left:100px ;
+    padding-right:100px ;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px black;
+}
+td{
+    border: 2px solid black;
+}
+input{
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    margin-left:15px;
+}
+#b1{
+    margin-left: 40px;
+}
+button{
+    height: 30px;
+    width: 251px;
+    border: 2px;
+    border-radius: 0;
+    background-color: rgb(89, 89, 240);
+}
+#s1{
+    color :blue;
+    cursor: pointer;
+}
+#d1{
+    margin-left: 600px;
+}

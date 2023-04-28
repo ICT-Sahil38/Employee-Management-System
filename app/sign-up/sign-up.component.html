@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body><br><br><hr>
+   
+    
+    <div class="cont">
+        <!-- [(Username1)] = "Cusername" [(Password1)]="Cpass1" -->
+        <h1>Welcome Buddy</h1>
+        <img src="https://th.bing.com/th/id/OIP.LG6UqvINZmEBMrUzrhADJAHaHa?pid=ImgDet&rs=1" height="70px">
+        <h1>Login</h1><br>
+        <form #myForm="ngForm">
+                <label>
+                Username:
+                    <input type="text" name="username" placeholder="Enter Username..." [(ngModel)] = Cusername><br>
+                </label><br>
+            
+                <label>
+                Password:
+                <input type="password" name="password" name="password" placeholder="Enter Password..." [(ngModel)] = Cpass1><br>
+                </label><br><br>
+            <button (click)="onSubmit()" type="submit" [disabled]="myForm?.invalid">Submit</button><br><br>
+            <small>Don't have an Account?</small><small id="s1" routerLink="/Login"> Create One</small>
+        </form>
+    </div><br><br><br><br><hr><br>
+    <small id="d1">© 2023 Employee Management System | All Rights are Reserved</small>
+
+</body>
+</html>

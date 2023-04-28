@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body><br><br><hr>
+  <div class="cont">
+  <img src="https://th.bing.com/th/id/OIP.LG6UqvINZmEBMrUzrhADJAHaHa?pid=ImgDet&rs=1" height="70px">
+  <h1>SignUp</h1><br>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+            <label>
+              Username:
+            <input type="text" name="text" ngModel #name="ngModel" minlength="5" required placeholder="Enter Username..." [(ngModel)] = "Username1"><br>
+            <div *ngIf="name?.invalid && (name?.dirty || name?.touched)">
+              <div *ngIf="name?.errors?.['required']"><pre>Username is required.</pre></div>
+              <div *ngIf="name?.errors?.['minlength']">Username is invalid.</div>
+            </div>
+            </label><br>
+          <label>
+            Email:
+            <input type="email" name="email" ngModel #email="ngModel" required email id ="b1" placeholder="Enter Email..."><br>
+            <div *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+              <div *ngIf="email?.errors?.['required']">Email is required.</div>
+              <div *ngIf="email?.errors?.['email']">Email is invalid.</div>
+            </div>
+          </label><br>
+          <label>
+            Password:
+            <input type="password" name="password" ngModel #password="ngModel" minlength="8" required placeholder="Enter Password..." [(ngModel)] = "Password1"><br>
+            <div *ngIf="password.invalid && (password?.dirty || password?.touched)">
+              <div *ngIf="password?.errors?.['required']">Password is required.</div>
+              <div *ngIf="password?.errors?.['minlength']">Password must be at least 8 characters long.</div>
+            </div>
+          </label><br><br>
+      <button type="submit" [disabled]="myForm?.invalid">Submit</button>
+    </form>
+  </div><br><br><br><br><br><br><br>
+  <hr><br>
+  <small id="d1">© 2023 Employee Management System | All Rights are Reserved</small>
+</body>
+</html>
